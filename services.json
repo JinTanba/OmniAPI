@@ -1,0 +1,83 @@
+{
+  "payTo": "0x1aA44c933A6718a4BC44064F0067A853c34be9B0",
+  "network": "eip155:84532",
+  "services": [
+    {
+      "path": "user",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Twitter user profile by username",
+      "rapidapi": {
+        "host": "twitter241.p.rapidapi.com",
+        "path": "/user",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "user-tweets",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get tweets from a Twitter user by ID",
+      "rapidapi": {
+        "host": "twitter241.p.rapidapi.com",
+        "path": "/user-tweets",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "get-users-v2",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get multiple Twitter users by IDs (comma-separated)",
+      "rapidapi": {
+        "host": "twitter241.p.rapidapi.com",
+        "path": "/get-users-v2",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "followings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get users that a Twitter user is following",
+      "rapidapi": {
+        "host": "twitter241.p.rapidapi.com",
+        "path": "/followings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "followers",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get followers of a Twitter user",
+      "rapidapi": {
+        "host": "twitter241.p.rapidapi.com",
+        "path": "/followers",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "instagram/posts",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Get Instagram posts by username",
+      "rapidapi": {
+        "host": "instagram120.p.rapidapi.com",
+        "path": "/api/instagram/posts",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "instagram/profile",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Get Instagram profile by username",
+      "rapidapi": {
+        "host": "instagram120.p.rapidapi.com",
+        "path": "/api/instagram/profile",
+        "method": "POST"
+      }
+    }
+  ]
+}

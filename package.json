@@ -1,0 +1,24 @@
+{
+  "name": "rapidapi-x402",
+  "version": "0.1.0",
+  "description": "RapidAPI x402 proxy server — pay with USDC to access RapidAPI services",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "test": "bun test tests/"
+  },
+  "dependencies": {
+    "@x402/core": "^2.3.0",
+    "@x402/evm": "^2.3.0",
+    "@x402/express": "^2.3.0",
+    "@x402/fetch": "^2.3.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "viem": "^2.46.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/bun": "latest",
+    "typescript": "^5.8.0"
+  }
+}
