@@ -22,6 +22,9 @@
       --accent: #3ECF8E;
       --accent-dim: rgba(62, 207, 142, 0.1);
       --accent-border: rgba(62, 207, 142, 0.2);
+      --blue: #63B3ED;
+      --blue-dim: rgba(99, 179, 237, 0.1);
+      --blue-border: rgba(99, 179, 237, 0.2);
       --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
     }
@@ -36,7 +39,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Layout */
     .container {
       max-width: 960px;
       margin: 0 auto;
@@ -90,7 +92,7 @@
 
     /* Hero */
     .hero {
-      padding: 160px 0 100px;
+      padding: 160px 0 48px;
       text-align: center;
     }
 
@@ -184,6 +186,59 @@
     }
 
     .cta-code .tooltip.show { opacity: 1; }
+
+    /* Audience Tabs */
+    .tab-bar {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 48px 0 0;
+    }
+
+    .tab-btn {
+      position: relative;
+      background: none;
+      border: none;
+      padding: 12px 28px;
+      font-family: var(--font-sans);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: color 0.2s;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .tab-btn:hover { color: var(--text); }
+
+    .tab-btn.active { color: var(--text); }
+
+    .tab-btn::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: transparent;
+      border-radius: 2px 2px 0 0;
+      transition: background 0.2s;
+    }
+
+    .tab-btn.active::after { background: var(--accent); }
+
+    .tab-btn .tab-icon {
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    .tab-divider {
+      height: 1px;
+      background: var(--border);
+    }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
 
     /* Sections */
     section {
@@ -294,7 +349,6 @@
     }
 
     tbody tr:last-child td { border-bottom: none; }
-
     tbody tr:hover { background: rgba(255,255,255,0.02); }
 
     .method-badge {
@@ -306,27 +360,11 @@
       font-weight: 600;
     }
 
-    .method-get {
-      background: rgba(62, 207, 142, 0.1);
-      color: #3ECF8E;
-    }
+    .method-get { background: rgba(62, 207, 142, 0.1); color: #3ECF8E; }
+    .method-post { background: rgba(99, 179, 237, 0.1); color: #63B3ED; }
 
-    .method-post {
-      background: rgba(99, 179, 237, 0.1);
-      color: #63B3ED;
-    }
-
-    .path-cell {
-      font-family: var(--font-mono);
-      font-weight: 500;
-    }
-
-    .price-cell {
-      font-family: var(--font-mono);
-      color: var(--accent);
-      font-weight: 500;
-    }
-
+    .path-cell { font-family: var(--font-mono); font-weight: 500; }
+    .price-cell { font-family: var(--font-mono); color: var(--accent); font-weight: 500; }
     .desc-cell { color: var(--text-secondary); }
 
     /* Code Example */
@@ -364,10 +402,7 @@
       transition: all 0.15s;
     }
 
-    .code-copy-btn:hover {
-      border-color: var(--accent-border);
-      color: var(--accent);
-    }
+    .code-copy-btn:hover { border-color: var(--accent-border); color: var(--accent); }
 
     .code-block pre {
       padding: 20px;
@@ -383,6 +418,141 @@
     .code-block pre .flag { color: #63B3ED; }
     .code-block pre .string { color: var(--accent); }
     .code-block pre .url { color: #C4B5FD; }
+
+    /* Human: Benefit Cards */
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .benefit {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      transition: border-color 0.2s;
+    }
+
+    .benefit:hover { border-color: var(--border-light); }
+
+    .benefit-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 16px;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-border);
+    }
+
+    .benefit h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .benefit p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* Human: Comparison */
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .compare-card {
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+
+    .compare-old {
+      background: rgba(255, 100, 100, 0.04);
+      border: 1px solid rgba(255, 100, 100, 0.12);
+    }
+
+    .compare-new {
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-border);
+    }
+
+    .compare-card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 20px;
+    }
+
+    .compare-old h3 { color: #F87171; }
+    .compare-new h3 { color: var(--accent); }
+
+    .compare-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .compare-card li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+
+    .compare-card li::before {
+      flex-shrink: 0;
+      font-size: 14px;
+      margin-top: 1px;
+    }
+
+    .compare-old li::before { content: '\2717'; color: #F87171; }
+    .compare-new li::before { content: '\2713'; color: var(--accent); }
+
+    /* Human: Use Cases */
+    .use-cases {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .use-case {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      transition: border-color 0.2s;
+    }
+
+    .use-case:hover { border-color: var(--border-light); }
+
+    .use-case-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+
+    .use-case h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .use-case p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
 
     /* Footer */
     footer {
@@ -420,11 +590,15 @@
     /* Responsive */
     @media (max-width: 768px) {
       .steps { grid-template-columns: 1fr; }
-      .hero { padding: 120px 0 60px; }
+      .benefits { grid-template-columns: 1fr; }
+      .comparison { grid-template-columns: 1fr; }
+      .use-cases { grid-template-columns: 1fr; }
+      .hero { padding: 120px 0 40px; }
       section { padding: 60px 0; }
       .cta-code { font-size: 12px; padding: 12px 16px; }
       .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
       .nav-links { gap: 16px; }
+      .tab-btn { padding: 10px 20px; font-size: 14px; }
     }
 
     @media (max-width: 480px) {
@@ -441,8 +615,6 @@
     <div class="container">
       <a href="#" class="nav-logo">Omni<span>API</span></a>
       <ul class="nav-links">
-        <li><a href="#how-it-works">How it works</a></li>
-        <li><a href="#endpoints">Endpoints</a></li>
         <li><a href="https://github.com/JinTanba/OmniAPI" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </div>
@@ -466,106 +638,212 @@
     </div>
   </section>
 
-  <!-- How it works -->
-  <section id="how-it-works">
-    <div class="container">
-      <div class="section-label">How it works</div>
-      <h2>Three steps to your first call</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>Install the skill</h3>
-          <p>Add OmniAPI to your Claude Code agent with <code>npx skills add</code>. No account needed.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Fund your wallet</h3>
-          <p>Load USDC on Base into your agent wallet. Each request costs just <code>$0.001</code>.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Call any endpoint</h3>
-          <p>Your agent pays per request automatically via the x402 protocol. Data flows back instantly.</p>
+  <!-- Audience Tabs -->
+  <div class="container">
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="human">
+        <span class="tab-icon">&#9786;</span>for human
+      </button>
+      <button class="tab-btn" data-tab="ai">
+        <span class="tab-icon">&#9881;</span>for ai
+      </button>
+    </div>
+    <div class="tab-divider"></div>
+  </div>
+
+  <!-- ======== FOR HUMAN ======== -->
+  <div class="tab-panel active" id="panel-human">
+
+    <!-- Why OmniAPI -->
+    <section>
+      <div class="container">
+        <div class="section-label">Why OmniAPI</div>
+        <h2>Let your AI agent access any API &mdash; instantly</h2>
+        <div class="benefits">
+          <div class="benefit">
+            <div class="benefit-icon">&#9889;</div>
+            <h3>Zero setup</h3>
+            <p>No registration, no API keys, no OAuth flows. Install the skill and your agent is ready to call real-world APIs in seconds.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon">&#128176;</div>
+            <h3>Pay only for what you use</h3>
+            <p>Each request costs $0.001 in USDC. No monthly subscriptions, no rate limit tiers, no surprise invoices. True pay-as-you-go.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon">&#128274;</div>
+            <h3>No credentials to leak</h3>
+            <p>Your agent never stores API keys. Payment is the authentication. Nothing to rotate, nothing to revoke, nothing to breach.</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon">&#127760;</div>
+            <h3>Open protocol</h3>
+            <p>Built on the x402 HTTP payment standard and USDC on Base. No vendor lock-in. Any agent, any wallet, any chain that supports x402.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Endpoints -->
-  <section id="endpoints">
-    <div class="container">
-      <div class="section-label">Endpoints</div>
-      <h2>Available APIs</h2>
-      <div class="endpoints-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Method</th>
-              <th>Path</th>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="method-badge method-get">GET</span></td>
-              <td class="path-cell">/user</td>
-              <td class="desc-cell">Get Twitter user profile by username</td>
-              <td class="price-cell">$0.001</td>
-            </tr>
-            <tr>
-              <td><span class="method-badge method-get">GET</span></td>
-              <td class="path-cell">/user-tweets</td>
-              <td class="desc-cell">Get tweets from a Twitter user by ID</td>
-              <td class="price-cell">$0.001</td>
-            </tr>
-            <tr>
-              <td><span class="method-badge method-get">GET</span></td>
-              <td class="path-cell">/get-users-v2</td>
-              <td class="desc-cell">Get multiple Twitter users by IDs</td>
-              <td class="price-cell">$0.001</td>
-            </tr>
-            <tr>
-              <td><span class="method-badge method-get">GET</span></td>
-              <td class="path-cell">/followings</td>
-              <td class="desc-cell">Get users that a Twitter user is following</td>
-              <td class="price-cell">$0.001</td>
-            </tr>
-            <tr>
-              <td><span class="method-badge method-get">GET</span></td>
-              <td class="path-cell">/followers</td>
-              <td class="desc-cell">Get followers of a Twitter user</td>
-              <td class="price-cell">$0.001</td>
-            </tr>
-            <tr>
-              <td><span class="method-badge method-post">POST</span></td>
-              <td class="path-cell">/instagram/posts</td>
-              <td class="desc-cell">Get Instagram posts by username</td>
-              <td class="price-cell">$0.001</td>
-            </tr>
-            <tr>
-              <td><span class="method-badge method-post">POST</span></td>
-              <td class="path-cell">/instagram/profile</td>
-              <td class="desc-cell">Get Instagram profile by username</td>
-              <td class="price-cell">$0.001</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- Code Example -->
-  <section id="example">
-    <div class="container">
-      <div class="section-label">Usage</div>
-      <h2>Example</h2>
-      <div class="code-block">
-        <div class="code-header">
-          <span>Terminal</span>
-          <button class="code-copy-btn" onclick="copyExample(this)">Copy</button>
+    <!-- Before / After -->
+    <section>
+      <div class="container">
+        <div class="section-label">The difference</div>
+        <h2>Traditional APIs vs OmniAPI</h2>
+        <div class="comparison">
+          <div class="compare-card compare-old">
+            <h3>Traditional APIs</h3>
+            <ul>
+              <li>Sign up for each provider separately</li>
+              <li>Manage dozens of API keys</li>
+              <li>Pay monthly even when you don't use it</li>
+              <li>Risk credential leaks from your agent</li>
+              <li>Handle OAuth, rate limits, key rotation</li>
+            </ul>
+          </div>
+          <div class="compare-card compare-new">
+            <h3>OmniAPI</h3>
+            <ul>
+              <li>One skill install, all APIs available</li>
+              <li>No keys &mdash; payment is the auth</li>
+              <li>$0.001 per request, nothing more</li>
+              <li>No credentials stored, nothing to leak</li>
+              <li>Just call the endpoint and get data</li>
+            </ul>
+          </div>
         </div>
-        <pre><span class="comment"># Get a Twitter user profile</span>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section>
+      <div class="container">
+        <div class="section-label">Use cases</div>
+        <h2>What you can build</h2>
+        <div class="use-cases">
+          <div class="use-case">
+            <div class="use-case-icon">&#128202;</div>
+            <h3>Social media analytics</h3>
+            <p>Have your agent pull follower counts, engagement metrics, and posting patterns across Twitter and Instagram.</p>
+          </div>
+          <div class="use-case">
+            <div class="use-case-icon">&#128270;</div>
+            <h3>Competitive research</h3>
+            <p>Monitor competitor accounts, track their content strategy, and get alerts on new activity automatically.</p>
+          </div>
+          <div class="use-case">
+            <div class="use-case-icon">&#129302;</div>
+            <h3>Autonomous agents</h3>
+            <p>Build agents that gather real-time social data, make decisions, and act &mdash; all without human intervention.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ======== FOR AI ======== -->
+  <div class="tab-panel" id="panel-ai">
+
+    <!-- How it works -->
+    <section>
+      <div class="container">
+        <div class="section-label">How it works</div>
+        <h2>Three steps to your first call</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Install the skill</h3>
+            <p>Add OmniAPI to your Claude Code agent with <code>npx skills add</code>. No account needed.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Fund your wallet</h3>
+            <p>Load USDC on Base into your agent wallet. Each request costs just <code>$0.001</code>.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Call any endpoint</h3>
+            <p>Your agent pays per request automatically via the x402 protocol. Data flows back instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Endpoints -->
+    <section>
+      <div class="container">
+        <div class="section-label">Endpoints</div>
+        <h2>Available APIs</h2>
+        <div class="endpoints-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Path</th>
+                <th>Description</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="method-badge method-get">GET</span></td>
+                <td class="path-cell">/user</td>
+                <td class="desc-cell">Get Twitter user profile by username</td>
+                <td class="price-cell">$0.001</td>
+              </tr>
+              <tr>
+                <td><span class="method-badge method-get">GET</span></td>
+                <td class="path-cell">/user-tweets</td>
+                <td class="desc-cell">Get tweets from a Twitter user by ID</td>
+                <td class="price-cell">$0.001</td>
+              </tr>
+              <tr>
+                <td><span class="method-badge method-get">GET</span></td>
+                <td class="path-cell">/get-users-v2</td>
+                <td class="desc-cell">Get multiple Twitter users by IDs</td>
+                <td class="price-cell">$0.001</td>
+              </tr>
+              <tr>
+                <td><span class="method-badge method-get">GET</span></td>
+                <td class="path-cell">/followings</td>
+                <td class="desc-cell">Get users that a Twitter user is following</td>
+                <td class="price-cell">$0.001</td>
+              </tr>
+              <tr>
+                <td><span class="method-badge method-get">GET</span></td>
+                <td class="path-cell">/followers</td>
+                <td class="desc-cell">Get followers of a Twitter user</td>
+                <td class="price-cell">$0.001</td>
+              </tr>
+              <tr>
+                <td><span class="method-badge method-post">POST</span></td>
+                <td class="path-cell">/instagram/posts</td>
+                <td class="desc-cell">Get Instagram posts by username</td>
+                <td class="price-cell">$0.001</td>
+              </tr>
+              <tr>
+                <td><span class="method-badge method-post">POST</span></td>
+                <td class="path-cell">/instagram/profile</td>
+                <td class="desc-cell">Get Instagram profile by username</td>
+                <td class="price-cell">$0.001</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Example -->
+    <section>
+      <div class="container">
+        <div class="section-label">Usage</div>
+        <h2>Example</h2>
+        <div class="code-block">
+          <div class="code-header">
+            <span>Terminal</span>
+            <button class="code-copy-btn" onclick="copyExample(this)">Copy</button>
+          </div>
+          <pre><span class="comment"># Get a Twitter user profile</span>
 <span class="cmd">curl</span> <span class="flag">-X</span> GET <span class="url">"https://omniapi-production-7de2.up.railway.app/user?username=elonmusk"</span> \
   <span class="flag">-H</span> <span class="string">"X-PAYMENT: &lt;x402-payment-header&gt;"</span>
 
@@ -574,9 +852,11 @@
   <span class="flag">-H</span> <span class="string">"Content-Type: application/json"</span> \
   <span class="flag">-H</span> <span class="string">"X-PAYMENT: &lt;x402-payment-header&gt;"</span> \
   <span class="flag">-d</span> <span class="string">'{"username": "instagram"}'</span></pre>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </div>
 
   <!-- Footer -->
   <footer>
@@ -592,6 +872,16 @@
   </footer>
 
   <script>
+    /* Tab switching */
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+
     function copyCommand(el) {
       const text = 'npx skills add https://github.com/JinTanba/OmniAPISkills';
       navigator.clipboard.writeText(text).then(() => {
