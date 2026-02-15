@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniAPI — No API keys. No signups. Just pay per request.</title>
+  <meta name="description" content="Access Twitter and Instagram APIs with zero setup. Pay per request with USDC via the x402 protocol.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #050505;
+      --bg-subtle: #0a0a0a;
+      --bg-card: #111111;
+      --border: #1a1a1a;
+      --border-light: #2a2a2a;
+      --text: #ededed;
+      --text-secondary: #888888;
+      --accent: #3ECF8E;
+      --accent-dim: rgba(62, 207, 142, 0.1);
+      --accent-border: rgba(62, 207, 142, 0.2);
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Nav */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(5, 5, 5, 0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+
+    .nav-logo {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero {
+      padding: 160px 0 100px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 100px;
+      border: 1px solid var(--accent-border);
+      background: var(--accent-dim);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 80px);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .hero-subtitle {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin: 0 auto 48px;
+      line-height: 1.6;
+    }
+
+    /* CTA Code Block */
+    .cta-code {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 16px 24px;
+      font-family: var(--font-mono);
+      font-size: 14px;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+
+    .cta-code:hover {
+      border-color: var(--accent-border);
+      box-shadow: 0 0 0 1px var(--accent-border);
+    }
+
+    .cta-code .prompt { color: var(--accent); user-select: none; }
+    .cta-code .cmd { color: var(--text); }
+
+    .cta-code .copy-icon {
+      color: var(--text-secondary);
+      transition: color 0.15s;
+      flex-shrink: 0;
+    }
+
+    .cta-code:hover .copy-icon { color: var(--accent); }
+
+    .cta-code .tooltip {
+      position: absolute;
+      top: -36px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: var(--bg);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      font-family: var(--font-sans);
+    }
+
+    .cta-code .tooltip.show { opacity: 1; }
+
+    /* Sections */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 48px;
+    }
+
+    /* Steps */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .step {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      transition: border-color 0.2s;
+    }
+
+    .step:hover { border-color: var(--border-light); }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-border);
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      font-family: var(--font-mono);
+    }
+
+    .step h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .step code {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      background: rgba(255,255,255,0.06);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    /* Endpoints Table */
+    .endpoints-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--bg-card);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead th {
+      text-align: left;
+      padding: 14px 20px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-subtle);
+    }
+
+    thead th:first-child { border-radius: 16px 0 0 0; }
+    thead th:last-child { border-radius: 0 16px 0 0; }
+
+    tbody td {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    tbody tr:last-child td { border-bottom: none; }
+
+    tbody tr:hover { background: rgba(255,255,255,0.02); }
+
+    .method-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .method-get {
+      background: rgba(62, 207, 142, 0.1);
+      color: #3ECF8E;
+    }
+
+    .method-post {
+      background: rgba(99, 179, 237, 0.1);
+      color: #63B3ED;
+    }
+
+    .path-cell {
+      font-family: var(--font-mono);
+      font-weight: 500;
+    }
+
+    .price-cell {
+      font-family: var(--font-mono);
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .desc-cell { color: var(--text-secondary); }
+
+    /* Code Example */
+    .code-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .code-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-subtle);
+    }
+
+    .code-header span {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .code-copy-btn {
+      background: none;
+      border: 1px solid var(--border-light);
+      color: var(--text-secondary);
+      font-size: 12px;
+      font-family: var(--font-sans);
+      padding: 4px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .code-copy-btn:hover {
+      border-color: var(--accent-border);
+      color: var(--accent);
+    }
+
+    .code-block pre {
+      padding: 20px;
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+
+    .code-block pre .comment { color: #555; }
+    .code-block pre .cmd { color: var(--text); }
+    .code-block pre .flag { color: #63B3ED; }
+    .code-block pre .string { color: var(--accent); }
+    .code-block pre .url { color: #C4B5FD; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-left {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .steps { grid-template-columns: 1fr; }
+      .hero { padding: 120px 0 60px; }
+      section { padding: 60px 0; }
+      .cta-code { font-size: 12px; padding: 12px 16px; }
+      .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+      .nav-links { gap: 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .cta-code .cmd { font-size: 11px; }
+      table { font-size: 13px; }
+      thead th, tbody td { padding: 10px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="container">
+      <a href="#" class="nav-logo">Omni<span>API</span></a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#endpoints">Endpoints</a></li>
+        <li><a href="https://github.com/JinTanba/OmniAPI" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">Powered by x402 protocol</div>
+      <h1>Omni<span>API</span></h1>
+      <p class="hero-subtitle">No API keys. No signups. Just pay per request.</p>
+      <div class="cta-code" onclick="copyCommand(this)" role="button" tabindex="0">
+        <span class="tooltip">Copied!</span>
+        <span class="prompt">$</span>
+        <span class="cmd">npx skills add https://github.com/JinTanba/OmniAPISkills</span>
+        <svg class="copy-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M3 11V3a1 1 0 011-1h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-it-works">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2>Three steps to your first call</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Install the skill</h3>
+          <p>Add OmniAPI to your Claude Code agent with <code>npx skills add</code>. No account needed.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Fund your wallet</h3>
+          <p>Load USDC on Base into your agent wallet. Each request costs just <code>$0.001</code>.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Call any endpoint</h3>
+          <p>Your agent pays per request automatically via the x402 protocol. Data flows back instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Endpoints -->
+  <section id="endpoints">
+    <div class="container">
+      <div class="section-label">Endpoints</div>
+      <h2>Available APIs</h2>
+      <div class="endpoints-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Path</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="method-badge method-get">GET</span></td>
+              <td class="path-cell">/user</td>
+              <td class="desc-cell">Get Twitter user profile by username</td>
+              <td class="price-cell">$0.001</td>
+            </tr>
+            <tr>
+              <td><span class="method-badge method-get">GET</span></td>
+              <td class="path-cell">/user-tweets</td>
+              <td class="desc-cell">Get tweets from a Twitter user by ID</td>
+              <td class="price-cell">$0.001</td>
+            </tr>
+            <tr>
+              <td><span class="method-badge method-get">GET</span></td>
+              <td class="path-cell">/get-users-v2</td>
+              <td class="desc-cell">Get multiple Twitter users by IDs</td>
+              <td class="price-cell">$0.001</td>
+            </tr>
+            <tr>
+              <td><span class="method-badge method-get">GET</span></td>
+              <td class="path-cell">/followings</td>
+              <td class="desc-cell">Get users that a Twitter user is following</td>
+              <td class="price-cell">$0.001</td>
+            </tr>
+            <tr>
+              <td><span class="method-badge method-get">GET</span></td>
+              <td class="path-cell">/followers</td>
+              <td class="desc-cell">Get followers of a Twitter user</td>
+              <td class="price-cell">$0.001</td>
+            </tr>
+            <tr>
+              <td><span class="method-badge method-post">POST</span></td>
+              <td class="path-cell">/instagram/posts</td>
+              <td class="desc-cell">Get Instagram posts by username</td>
+              <td class="price-cell">$0.001</td>
+            </tr>
+            <tr>
+              <td><span class="method-badge method-post">POST</span></td>
+              <td class="path-cell">/instagram/profile</td>
+              <td class="desc-cell">Get Instagram profile by username</td>
+              <td class="price-cell">$0.001</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example -->
+  <section id="example">
+    <div class="container">
+      <div class="section-label">Usage</div>
+      <h2>Example</h2>
+      <div class="code-block">
+        <div class="code-header">
+          <span>Terminal</span>
+          <button class="code-copy-btn" onclick="copyExample(this)">Copy</button>
+        </div>
+        <pre><span class="comment"># Get a Twitter user profile</span>
+<span class="cmd">curl</span> <span class="flag">-X</span> GET <span class="url">"https://omniapi-production-7de2.up.railway.app/user?username=elonmusk"</span> \
+  <span class="flag">-H</span> <span class="string">"X-PAYMENT: &lt;x402-payment-header&gt;"</span>
+
+<span class="comment"># Get Instagram profile</span>
+<span class="cmd">curl</span> <span class="flag">-X</span> POST <span class="url">"https://omniapi-production-7de2.up.railway.app/instagram/profile"</span> \
+  <span class="flag">-H</span> <span class="string">"Content-Type: application/json"</span> \
+  <span class="flag">-H</span> <span class="string">"X-PAYMENT: &lt;x402-payment-header&gt;"</span> \
+  <span class="flag">-d</span> <span class="string">'{"username": "instagram"}'</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">OmniAPI &mdash; pay-per-request APIs for AI agents</div>
+        <ul class="footer-links">
+          <li><a href="https://github.com/JinTanba/OmniAPI" target="_blank" rel="noopener">OmniAPI</a></li>
+          <li><a href="https://github.com/JinTanba/OmniAPISkills" target="_blank" rel="noopener">OmniAPISkills</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function copyCommand(el) {
+      const text = 'npx skills add https://github.com/JinTanba/OmniAPISkills';
+      navigator.clipboard.writeText(text).then(() => {
+        const tooltip = el.querySelector('.tooltip');
+        tooltip.classList.add('show');
+        setTimeout(() => tooltip.classList.remove('show'), 1500);
+      });
+    }
+
+    function copyExample(btn) {
+      const pre = btn.closest('.code-block').querySelector('pre');
+      navigator.clipboard.writeText(pre.textContent).then(() => {
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+      });
+    }
+  </script>
+
+</body>
+</html>
