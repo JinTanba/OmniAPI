@@ -78,6 +78,28 @@
         "path": "/api/instagram/profile",
         "method": "POST"
       }
+    },
+    {
+      "path": "linkedin/profile-by-url",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get LinkedIn profile data by URL",
+      "rapidapi": {
+        "host": "linkedin-data-api.p.rapidapi.com",
+        "path": "/get-profile-data-by-url",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "linkedin/search-people",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search LinkedIn people by keywords",
+      "rapidapi": {
+        "host": "linkedin-data-api.p.rapidapi.com",
+        "path": "/search-people",
+        "method": "GET"
+      }
     }
   ]
 }
