@@ -79,5 +79,16 @@
         "method": "POST"
       }
     }
-  ]
+  ]    , {
+      "path": "linkedin/profile",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get LinkedIn profile data",
+      "rapidapi": {
+        "host": "linkedin-data-api.p.rapidapi.com",
+        "path": "/",
+        "method": "GET"
+      }
+    }
+
 }
