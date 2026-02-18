@@ -100,6 +100,2030 @@
         "path": "/search-people",
         "method": "GET"
       }
+    },
+    {
+      "path": "weather/current",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get current weather by location",
+      "rapidapi": {
+        "host": "weatherapi-com.p.rapidapi.com",
+        "path": "/current.json",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "weather/forecast",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get weather forecast",
+      "rapidapi": {
+        "host": "weatherapi-com.p.rapidapi.com",
+        "path": "/forecast.json",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "news/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search news articles",
+      "rapidapi": {
+        "host": "news-api14.p.rapidapi.com",
+        "path": "/v2/search/articles",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "crypto/coins",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get list of cryptocurrencies",
+      "rapidapi": {
+        "host": "coinranking1.p.rapidapi.com",
+        "path": "/coins",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "crypto/coin/{uuid}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get cryptocurrency details",
+      "rapidapi": {
+        "host": "coinranking1.p.rapidapi.com",
+        "path": "/coin/{uuid}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "jobs/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search jobs",
+      "rapidapi": {
+        "host": "jsearch.p.rapidapi.com",
+        "path": "/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "youtube/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search YouTube videos",
+      "rapidapi": {
+        "host": "youtube138.p.rapidapi.com",
+        "path": "/search/",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "youtube/video-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get YouTube video details",
+      "rapidapi": {
+        "host": "youtube138.p.rapidapi.com",
+        "path": "/video/details/",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "youtube/channel-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get YouTube channel details",
+      "rapidapi": {
+        "host": "youtube138.p.rapidapi.com",
+        "path": "/channel/details/",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "translate",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Translate text",
+      "rapidapi": {
+        "host": "google-translate113.p.rapidapi.com",
+        "path": "/api/v1/translator/text",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "qrcode/generate",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Generate QR code",
+      "rapidapi": {
+        "host": "qrcode3.p.rapidapi.com",
+        "path": "/generate",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "exchange-rate",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get exchange rates",
+      "rapidapi": {
+        "host": "exchange-rate-api1.p.rapidapi.com",
+        "path": "/latest",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "ip-geo",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get geolocation by IP",
+      "rapidapi": {
+        "host": "ip-geo-location.p.rapidapi.com",
+        "path": "/ip",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "email/validate",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Validate email address",
+      "rapidapi": {
+        "host": "mailcheck.p.rapidapi.com",
+        "path": "/",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "sentiment/analyze",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Analyze text sentiment",
+      "rapidapi": {
+        "host": "text-analysis12.p.rapidapi.com",
+        "path": "/sentiment-analysis/api/v1.1",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "football/leagues",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get football leagues",
+      "rapidapi": {
+        "host": "api-football-v1.p.rapidapi.com",
+        "path": "/v3/leagues",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "football/fixtures",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get football fixtures",
+      "rapidapi": {
+        "host": "api-football-v1.p.rapidapi.com",
+        "path": "/v3/fixtures",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/ping",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Check CoinGecko API status",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/ping",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/coins/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List all coins (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/coins/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/coins/markets",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get coins market data (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/coins/markets",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/coins/{id}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get coin current data (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/coins/{id}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/coins/{id}/market_chart",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get coin historical market data (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/coins/{id}/market_chart",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/coins/{id}/ohlc",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get coin OHLC chart data (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/coins/{id}/ohlc",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/exchanges",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List all exchanges (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/exchanges",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/exchange_rates",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get BTC exchange rates (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/exchange_rates",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search for coins, exchanges, categories (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/trending",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get trending coins (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/search/trending",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coingecko/global",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get global crypto data (CoinGecko)",
+      "rapidapi": {
+        "host": "coingecko.p.rapidapi.com",
+        "path": "/global",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinmarketcap/cryptocurrency/listings/latest",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Latest cryptocurrency listings (CoinMarketCap)",
+      "rapidapi": {
+        "host": "coinmarketcap.p.rapidapi.com",
+        "path": "/cryptocurrency/listings/latest",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinmarketcap/cryptocurrency/quotes/latest",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Latest quotes for cryptocurrencies (CoinMarketCap)",
+      "rapidapi": {
+        "host": "coinmarketcap.p.rapidapi.com",
+        "path": "/cryptocurrency/quotes/latest",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinmarketcap/cryptocurrency/info",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Cryptocurrency metadata (CoinMarketCap)",
+      "rapidapi": {
+        "host": "coinmarketcap.p.rapidapi.com",
+        "path": "/cryptocurrency/info",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinmarketcap/cryptocurrency/map",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Cryptocurrency ID map (CoinMarketCap)",
+      "rapidapi": {
+        "host": "coinmarketcap.p.rapidapi.com",
+        "path": "/cryptocurrency/map",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinmarketcap/global-metrics/quotes/latest",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Global market metrics (CoinMarketCap)",
+      "rapidapi": {
+        "host": "coinmarketcap.p.rapidapi.com",
+        "path": "/global-metrics/quotes/latest",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinranking/coin/{uuid}/history",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Coin price history (Coinranking)",
+      "rapidapi": {
+        "host": "coinranking1.p.rapidapi.com",
+        "path": "/coin/{uuid}/history",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinranking/coin/{uuid}/ohlcv",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Coin OHLCV data (Coinranking)",
+      "rapidapi": {
+        "host": "coinranking1.p.rapidapi.com",
+        "path": "/coin/{uuid}/ohlcv",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinranking/exchanges",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List crypto exchanges (Coinranking)",
+      "rapidapi": {
+        "host": "coinranking1.p.rapidapi.com",
+        "path": "/exchanges",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinranking/exchange/{uuid}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Exchange details (Coinranking)",
+      "rapidapi": {
+        "host": "coinranking1.p.rapidapi.com",
+        "path": "/exchange/{uuid}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinranking/search-suggestions",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search suggestions (Coinranking)",
+      "rapidapi": {
+        "host": "coinranking1.p.rapidapi.com",
+        "path": "/search-suggestions",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "binance/ticker/price",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Latest price for symbols (Binance)",
+      "rapidapi": {
+        "host": "binance43.p.rapidapi.com",
+        "path": "/ticker/price",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "binance/ticker/24hr",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "24hr ticker price change (Binance)",
+      "rapidapi": {
+        "host": "binance43.p.rapidapi.com",
+        "path": "/ticker/24hr",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "binance/exchangeInfo",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Exchange information (Binance)",
+      "rapidapi": {
+        "host": "binance43.p.rapidapi.com",
+        "path": "/exchangeInfo",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "binance/klines",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Kline/candlestick data (Binance)",
+      "rapidapi": {
+        "host": "binance43.p.rapidapi.com",
+        "path": "/klines",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "binance/depth",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Order book depth (Binance)",
+      "rapidapi": {
+        "host": "binance43.p.rapidapi.com",
+        "path": "/depth",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "binance/trades",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Recent trades (Binance)",
+      "rapidapi": {
+        "host": "binance43.p.rapidapi.com",
+        "path": "/trades",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "cryptocompare/data/top/totalvolfull",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Top coins by volume (CryptoCompare)",
+      "rapidapi": {
+        "host": "cryptocompare.p.rapidapi.com",
+        "path": "/data/top/totalvolfull",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "cryptocompare/data/v2/histoday",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Daily historical data (CryptoCompare)",
+      "rapidapi": {
+        "host": "cryptocompare.p.rapidapi.com",
+        "path": "/data/v2/histoday",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "cryptocompare/data/v2/histohour",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Hourly historical data (CryptoCompare)",
+      "rapidapi": {
+        "host": "cryptocompare.p.rapidapi.com",
+        "path": "/data/v2/histohour",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "cryptocompare/data/pricemultifull",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Multiple symbols full data (CryptoCompare)",
+      "rapidapi": {
+        "host": "cryptocompare.p.rapidapi.com",
+        "path": "/data/pricemultifull",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "blockchair/bitcoin/stats",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Bitcoin network stats (Blockchair)",
+      "rapidapi": {
+        "host": "blockchain.info.p.rapidapi.com",
+        "path": "/bitcoin/stats",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "blockchair/ethereum/stats",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Ethereum network stats (Blockchair)",
+      "rapidapi": {
+        "host": "blockchain.info.p.rapidapi.com",
+        "path": "/ethereum/stats",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "etherscan/account/balance",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETH balance for address (Etherscan)",
+      "rapidapi": {
+        "host": "etherscan2.p.rapidapi.com",
+        "path": "/api",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coincap/assets",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List all assets (CoinCap)",
+      "rapidapi": {
+        "host": "coincap.p.rapidapi.com",
+        "path": "/assets",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coincap/assets/{id}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get asset details (CoinCap)",
+      "rapidapi": {
+        "host": "coincap.p.rapidapi.com",
+        "path": "/assets/{id}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coincap/assets/{id}/history",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Asset price history (CoinCap)",
+      "rapidapi": {
+        "host": "coincap.p.rapidapi.com",
+        "path": "/assets/{id}/history",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coincap/assets/{id}/markets",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Asset markets (CoinCap)",
+      "rapidapi": {
+        "host": "coincap.p.rapidapi.com",
+        "path": "/assets/{id}/markets",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coincap/exchanges",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List all exchanges (CoinCap)",
+      "rapidapi": {
+        "host": "coincap.p.rapidapi.com",
+        "path": "/exchanges",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coincap/rates",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Exchange rates (CoinCap)",
+      "rapidapi": {
+        "host": "coincap.p.rapidapi.com",
+        "path": "/rates",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "blockchain/btc/main",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Bitcoin blockchain info",
+      "rapidapi": {
+        "host": "blockchain.p.rapidapi.com",
+        "path": "/btc/main",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "blockchain/eth/main",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Ethereum blockchain info",
+      "rapidapi": {
+        "host": "blockchain.p.rapidapi.com",
+        "path": "/eth/main",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "cryptowatch/markets",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List all markets (CryptoWatch)",
+      "rapidapi": {
+        "host": "cryptowatch.p.rapidapi.com",
+        "path": "/markets",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "cryptowatch/markets/{exchange}/{pair}/price",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Market price (CryptoWatch)",
+      "rapidapi": {
+        "host": "cryptowatch.p.rapidapi.com",
+        "path": "/markets/{exchange}/{pair}/price",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "cryptowatch/markets/{exchange}/{pair}/summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Market summary (CryptoWatch)",
+      "rapidapi": {
+        "host": "cryptowatch.p.rapidapi.com",
+        "path": "/markets/{exchange}/{pair}/summary",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "cryptowatch/assets",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List all assets (CryptoWatch)",
+      "rapidapi": {
+        "host": "cryptowatch.p.rapidapi.com",
+        "path": "/assets",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinbase/v2/prices/{symbol}/spot",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Spot price (Coinbase)",
+      "rapidapi": {
+        "host": "coinbase-api1.p.rapidapi.com",
+        "path": "/v2/prices/{symbol}/spot",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinbase/v2/prices/{symbol}/buy",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Buy price (Coinbase)",
+      "rapidapi": {
+        "host": "coinbase-api1.p.rapidapi.com",
+        "path": "/v2/prices/{symbol}/buy",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinbase/v2/prices/{symbol}/sell",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Sell price (Coinbase)",
+      "rapidapi": {
+        "host": "coinbase-api1.p.rapidapi.com",
+        "path": "/v2/prices/{symbol}/sell",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinbase/v2/currencies",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List currencies (Coinbase)",
+      "rapidapi": {
+        "host": "coinbase-api1.p.rapidapi.com",
+        "path": "/v2/currencies",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinbase/v2/exchange-rates",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Exchange rates (Coinbase)",
+      "rapidapi": {
+        "host": "coinbase-api1.p.rapidapi.com",
+        "path": "/v2/exchange-rates",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "coinbase/v2/time",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Server time (Coinbase)",
+      "rapidapi": {
+        "host": "coinbase-api1.p.rapidapi.com",
+        "path": "/v2/time",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "kraken/public/Assets",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List assets (Kraken)",
+      "rapidapi": {
+        "host": "kraken.p.rapidapi.com",
+        "path": "/public/Assets",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "kraken/public/Ticker",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ticker info (Kraken)",
+      "rapidapi": {
+        "host": "kraken.p.rapidapi.com",
+        "path": "/public/Ticker",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "kraken/public/OHLC",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get OHLC data (Kraken)",
+      "rapidapi": {
+        "host": "kraken.p.rapidapi.com",
+        "path": "/public/OHLC",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "kraken/public/Depth",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get order book (Kraken)",
+      "rapidapi": {
+        "host": "kraken.p.rapidapi.com",
+        "path": "/public/Depth",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "kraken/public/Trades",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get recent trades (Kraken)",
+      "rapidapi": {
+        "host": "kraken.p.rapidapi.com",
+        "path": "/public/Trades",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "kraken/public/AssetPairs",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List tradeable asset pairs (Kraken)",
+      "rapidapi": {
+        "host": "kraken.p.rapidapi.com",
+        "path": "/public/AssetPairs",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "slack/chat/postMessage",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Post message to Slack channel",
+      "rapidapi": {
+        "host": "slack.com.p.rapidapi.com",
+        "path": "/api/chat.postMessage",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "slack/users/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List Slack users",
+      "rapidapi": {
+        "host": "slack.com.p.rapidapi.com",
+        "path": "/api/users.list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "slack/channels/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List Slack channels",
+      "rapidapi": {
+        "host": "slack.com.p.rapidapi.com",
+        "path": "/api/conversations.list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "discord/sendMessage",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Send message to Discord channel",
+      "rapidapi": {
+        "host": "discord10.p.rapidapi.com",
+        "path": "/sendMessage",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "discord/getChannels",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Discord channels",
+      "rapidapi": {
+        "host": "discord10.p.rapidapi.com",
+        "path": "/getChannels",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "telegram/sendMessage",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Send Telegram message",
+      "rapidapi": {
+        "host": "telegram29.p.rapidapi.com",
+        "path": "/sendMessage",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "telegram/getUpdates",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Telegram updates",
+      "rapidapi": {
+        "host": "telegram29.p.rapidapi.com",
+        "path": "/getUpdates",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "telegram/getMe",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get bot info (Telegram)",
+      "rapidapi": {
+        "host": "telegram29.p.rapidapi.com",
+        "path": "/getMe",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "whatsapp/sendMessage",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Send WhatsApp message",
+      "rapidapi": {
+        "host": "whatsapp-business-api1.p.rapidapi.com",
+        "path": "/sendMessage",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "email/send",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Send email via SendGrid",
+      "rapidapi": {
+        "host": "rapidmail.p.rapidapi.com",
+        "path": "/send",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "email/verify",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Verify email address",
+      "rapidapi": {
+        "host": "email-validator.p.rapidapi.com",
+        "path": "/verify",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "notion/createPage",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Create Notion page",
+      "rapidapi": {
+        "host": "notion-api2.p.rapidapi.com",
+        "path": "/createPage",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "notion/queryDatabase",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Query Notion database",
+      "rapidapi": {
+        "host": "notion-api2.p.rapidapi.com",
+        "path": "/queryDatabase",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "notion/search",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Search Notion workspace",
+      "rapidapi": {
+        "host": "notion-api2.p.rapidapi.com",
+        "path": "/search",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "calendar/events",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get calendar events",
+      "rapidapi": {
+        "host": "google-calendar.p.rapidapi.com",
+        "path": "/events",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "calendar/quickAdd",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Quick add calendar event",
+      "rapidapi": {
+        "host": "google-calendar.p.rapidapi.com",
+        "path": "/quickAdd",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "trello/boards",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Trello boards",
+      "rapidapi": {
+        "host": "trello22.p.rapidapi.com",
+        "path": "/members/me/boards",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "trello/createCard",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Create Trello card",
+      "rapidapi": {
+        "host": "trello22.p.rapidapi.com",
+        "path": "/cards",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "asana/tasks",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Asana tasks",
+      "rapidapi": {
+        "host": "asana.p.rapidapi.com",
+        "path": "/tasks",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "airtable/records",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Airtable records",
+      "rapidapi": {
+        "host": "airtable47.p.rapidapi.com",
+        "path": "/records",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "pdf/extractText",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Extract text from PDF",
+      "rapidapi": {
+        "host": "pdf-text-extractor.p.rapidapi.com",
+        "path": "/extract",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "pdf/toHtml",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Convert PDF to HTML",
+      "rapidapi": {
+        "host": "pdf-to-html.p.rapidapi.com",
+        "path": "/convert",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "html/toPdf",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Convert HTML to PDF",
+      "rapidapi": {
+        "host": "html-to-pdf.p.rapidapi.com",
+        "path": "/convert",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "speech/transcribe",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Transcribe audio to text (Whisper)",
+      "rapidapi": {
+        "host": "whisper44.p.rapidapi.com",
+        "path": "/transcribe",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "speech/translate",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Translate audio (Whisper)",
+      "rapidapi": {
+        "host": "whisper44.p.rapidapi.com",
+        "path": "/translate",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "tts/synthesize",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Text to speech synthesis",
+      "rapidapi": {
+        "host": "text-to-speech27.p.rapidapi.com",
+        "path": "/synthesize",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "tts/voices",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List available TTS voices",
+      "rapidapi": {
+        "host": "text-to-speech27.p.rapidapi.com",
+        "path": "/voices",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "image/ocr",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "OCR extract text from image",
+      "rapidapi": {
+        "host": "ocr-extract-text.p.rapidapi.com",
+        "path": "/ocr",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "image/resize",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Resize image",
+      "rapidapi": {
+        "host": "image-processing.p.rapidapi.com",
+        "path": "/resize",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "image/recognize",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "AI image recognition",
+      "rapidapi": {
+        "host": "image-recognition2.p.rapidapi.com",
+        "path": "/recognize",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "image/facedetect",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Detect faces in image",
+      "rapidapi": {
+        "host": "face-detection6.p.rapidapi.com",
+        "path": "/detect",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "github/repos",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List GitHub repositories",
+      "rapidapi": {
+        "host": "github3.p.rapidapi.com",
+        "path": "/user/repos",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "github/issues",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List repository issues",
+      "rapidapi": {
+        "host": "github3.p.rapidapi.com",
+        "path": "/repos/{owner}/{repo}/issues",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "github/pulls",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List pull requests",
+      "rapidapi": {
+        "host": "github3.p.rapidapi.com",
+        "path": "/repos/{owner}/{repo}/pulls",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "github/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search GitHub",
+      "rapidapi": {
+        "host": "github3.p.rapidapi.com",
+        "path": "/search/repositories",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "gitlab/projects",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List GitLab projects",
+      "rapidapi": {
+        "host": "gitlab.p.rapidapi.com",
+        "path": "/projects",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "gitlab/pipelines",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List GitLab pipelines",
+      "rapidapi": {
+        "host": "gitlab.p.rapidapi.com",
+        "path": "/projects/{id}/pipelines",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "jira/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search Jira issues",
+      "rapidapi": {
+        "host": "jira4.p.rapidapi.com",
+        "path": "/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "jira/createIssue",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Create Jira issue",
+      "rapidapi": {
+        "host": "jira4.p.rapidapi.com",
+        "path": "/issue",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "search/google",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Google web search",
+      "rapidapi": {
+        "host": "google-search74.p.rapidapi.com",
+        "path": "/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "search/google/images",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Google image search",
+      "rapidapi": {
+        "host": "google-search74.p.rapidapi.com",
+        "path": "/images",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "search/google/news",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Google news search",
+      "rapidapi": {
+        "host": "google-search74.p.rapidapi.com",
+        "path": "/news",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "search/bing",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Bing web search",
+      "rapidapi": {
+        "host": "bing-web-search1.p.rapidapi.com",
+        "path": "/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "wikipedia/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search Wikipedia",
+      "rapidapi": {
+        "host": "wikipedia-org.p.rapidapi.com",
+        "path": "/w/api.php",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "wikipedia/summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Wikipedia summary",
+      "rapidapi": {
+        "host": "wiki-briefs.p.rapidapi.com",
+        "path": "/getWiki",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "stripe/customers",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List Stripe customers",
+      "rapidapi": {
+        "host": "stripe-com.p.rapidapi.com",
+        "path": "/v1/customers",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "stripe/createPayment",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Create Stripe payment intent",
+      "rapidapi": {
+        "host": "stripe-com.p.rapidapi.com",
+        "path": "/v1/payment_intents",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "forex/rates",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get forex rates",
+      "rapidapi": {
+        "host": "forex-rate.p.rapidapi.com",
+        "path": "/rates",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "forex/convert",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Convert currency",
+      "rapidapi": {
+        "host": "currency-converter5.p.rapidapi.com",
+        "path": "/convert",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "stocks/quote",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock quote",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/quote",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "stocks/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search stocks",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/v1/finance/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "stocks/historical",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Historical stock data",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/v8/finance/chart/{symbol}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "maps/geocode",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Geocode address to coordinates",
+      "rapidapi": {
+        "host": "google-maps-geocoding.p.rapidapi.com",
+        "path": "/geocode/json",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "maps/reverseGeocode",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Reverse geocode coordinates to address",
+      "rapidapi": {
+        "host": "google-maps-geocoding.p.rapidapi.com",
+        "path": "/reverse",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "maps/directions",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get directions between points",
+      "rapidapi": {
+        "host": "google-maps-directions.p.rapidapi.com",
+        "path": "/directions/json",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "maps/places/nearby",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Find nearby places",
+      "rapidapi": {
+        "host": "google-maps-places.p.rapidapi.com",
+        "path": "/nearbysearch/json",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "maps/places/textsearch",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Text search for places",
+      "rapidapi": {
+        "host": "google-maps-places.p.rapidapi.com",
+        "path": "/textsearch/json",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "maps/distancematrix",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Distance matrix between points",
+      "rapidapi": {
+        "host": "google-distance-matrix.p.rapidapi.com",
+        "path": "/distancematrix/json",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "osm/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search OpenStreetMap",
+      "rapidapi": {
+        "host": "forward-reverse-geocoding.p.rapidapi.com",
+        "path": "/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "osm/reverse",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Reverse geocode (OSM)",
+      "rapidapi": {
+        "host": "forward-reverse-geocoding.p.rapidapi.com",
+        "path": "/reverse",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "geocode/forward",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Forward geocoding",
+      "rapidapi": {
+        "host": "geocode.xyz.p.rapidapi.com",
+        "path": "/geocode",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "ai/completions",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "AI text completions",
+      "rapidapi": {
+        "host": "open-ai21.p.rapidapi.com",
+        "path": "/completions",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "ai/chat",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "AI chat completions",
+      "rapidapi": {
+        "host": "open-ai21.p.rapidapi.com",
+        "path": "/chat",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "ai/embeddings",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Generate text embeddings",
+      "rapidapi": {
+        "host": "open-ai21.p.rapidapi.com",
+        "path": "/embeddings",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "ai/image/generate",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Generate image from text",
+      "rapidapi": {
+        "host": "ai-image-generator3.p.rapidapi.com",
+        "path": "/generate",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "barcode/generate",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Generate barcode",
+      "rapidapi": {
+        "host": "barcode-generator.p.rapidapi.com",
+        "path": "/generate",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "url/shorten",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Shorten URL",
+      "rapidapi": {
+        "host": "url-shortener23.p.rapidapi.com",
+        "path": "/shorten",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "holidays",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get public holidays",
+      "rapidapi": {
+        "host": "holidays-by-api-ninjas.p.rapidapi.com",
+        "path": "/v1/holidays",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "weather/astronomy",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Astronomy data (sun/moon)",
+      "rapidapi": {
+        "host": "weatherapi-com.p.rapidapi.com",
+        "path": "/astronomy.json",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "flights/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search flights",
+      "rapidapi": {
+        "host": "skyscanner50.p.rapidapi.com",
+        "path": "/api/v1/searchFlights",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "recipes/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search recipes",
+      "rapidapi": {
+        "host": "recipe-food-nutrition.p.rapidapi.com",
+        "path": "/recipes/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "recipes/info",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get recipe details",
+      "rapidapi": {
+        "host": "recipe-food-nutrition.p.rapidapi.com",
+        "path": "/recipes/{id}/information",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "dexscreener/tokens/{address}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get token data by address (DexScreener)",
+      "rapidapi": {
+        "host": "dexscreener.p.rapidapi.com",
+        "path": "/latest/dex/tokens/{address}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "dexscreener/pairs/{chain}/{address}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get pair data (DexScreener)",
+      "rapidapi": {
+        "host": "dexscreener.p.rapidapi.com",
+        "path": "/latest/dex/pairs/{chain}/{address}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "dexscreener/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search tokens/pairs (DexScreener)",
+      "rapidapi": {
+        "host": "dexscreener.p.rapidapi.com",
+        "path": "/latest/dex/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "dexscreener/profile/{address}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get token profile (DexScreener)",
+      "rapidapi": {
+        "host": "dexscreener.p.rapidapi.com",
+        "path": "/token-profiles/latest/dex/tokens/{address}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "reddit/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search Reddit posts",
+      "rapidapi": {
+        "host": "reddit-scraper2.p.rapidapi.com",
+        "path": "/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "reddit/subreddit/{subreddit}/hot",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get hot posts from subreddit",
+      "rapidapi": {
+        "host": "reddit-scraper2.p.rapidapi.com",
+        "path": "/subreddit/{subreddit}/hot",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "reddit/subreddit/{subreddit}/new",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get new posts from subreddit",
+      "rapidapi": {
+        "host": "reddit-scraper2.p.rapidapi.com",
+        "path": "/subreddit/{subreddit}/new",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "reddit/post/{id}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Reddit post details",
+      "rapidapi": {
+        "host": "reddit-scraper2.p.rapidapi.com",
+        "path": "/post/{id}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "reddit/user/{username}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Reddit user info",
+      "rapidapi": {
+        "host": "reddit-scraper2.p.rapidapi.com",
+        "path": "/user/{username}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "opensea/collection/{slug}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get NFT collection info (OpenSea)",
+      "rapidapi": {
+        "host": "opensea2.p.rapidapi.com",
+        "path": "/collection/{slug}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "opensea/collections",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List NFT collections (OpenSea)",
+      "rapidapi": {
+        "host": "opensea2.p.rapidapi.com",
+        "path": "/collections",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "opensea/assets",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List NFT assets (OpenSea)",
+      "rapidapi": {
+        "host": "opensea2.p.rapidapi.com",
+        "path": "/assets",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "opensea/asset/{contract}/{token_id}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get single NFT asset (OpenSea)",
+      "rapidapi": {
+        "host": "opensea2.p.rapidapi.com",
+        "path": "/asset/{contract}/{token_id}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "opensea/events",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get NFT events (OpenSea)",
+      "rapidapi": {
+        "host": "opensea2.p.rapidapi.com",
+        "path": "/events",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "nft/floor-price/{contract}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get NFT floor price",
+      "rapidapi": {
+        "host": "nft-floor-price.p.rapidapi.com",
+        "path": "/floor-price/{contract}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "fred/series/{series_id}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get FRED economic series data",
+      "rapidapi": {
+        "host": "fred-series-observations.p.rapidapi.com",
+        "path": "/series/{series_id}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "fred/observations/{series_id}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get FRED observations",
+      "rapidapi": {
+        "host": "fred-series-observations.p.rapidapi.com",
+        "path": "/observations/{series_id}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "economy/indicators",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get economic indicators",
+      "rapidapi": {
+        "host": "economy-indicators.p.rapidapi.com",
+        "path": "/indicators",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "economy/gdp",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get GDP data",
+      "rapidapi": {
+        "host": "economy-indicators.p.rapidapi.com",
+        "path": "/gdp",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "economy/inflation",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get inflation/CPI data",
+      "rapidapi": {
+        "host": "economy-indicators.p.rapidapi.com",
+        "path": "/inflation",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "economy/unemployment",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get unemployment rate",
+      "rapidapi": {
+        "host": "economy-indicators.p.rapidapi.com",
+        "path": "/unemployment",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "trends/trending",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get trending searches (Google Trends)",
+      "rapidapi": {
+        "host": "google-trends8.p.rapidapi.com",
+        "path": "/trending",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "trends/daily",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get daily trends (Google Trends)",
+      "rapidapi": {
+        "host": "google-trends8.p.rapidapi.com",
+        "path": "/daily",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "trends/interest-over-time",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Interest over time (Google Trends)",
+      "rapidapi": {
+        "host": "google-trends8.p.rapidapi.com",
+        "path": "/interest-over-time",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "trends/related-topics",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get related topics (Google Trends)",
+      "rapidapi": {
+        "host": "google-trends8.p.rapidapi.com",
+        "path": "/related-topics",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "trends/related-queries",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get related queries (Google Trends)",
+      "rapidapi": {
+        "host": "google-trends8.p.rapidapi.com",
+        "path": "/related-queries",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "defillama/protocols",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List all DeFi protocols (DeFi Llama)",
+      "rapidapi": {
+        "host": "defillama.p.rapidapi.com",
+        "path": "/protocols",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "defillama/protocol/{name}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get protocol details (DeFi Llama)",
+      "rapidapi": {
+        "host": "defillama.p.rapidapi.com",
+        "path": "/protocol/{name}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "defillama/tvl/{name}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get protocol TVL (DeFi Llama)",
+      "rapidapi": {
+        "host": "defillama.p.rapidapi.com",
+        "path": "/tvl/{name}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "defillama/chains",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List all chains (DeFi Llama)",
+      "rapidapi": {
+        "host": "defillama.p.rapidapi.com",
+        "path": "/chains",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "producthunt/posts",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get Product Hunt posts",
+      "rapidapi": {
+        "host": "product-hunt2.p.rapidapi.com",
+        "path": "/posts",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "producthunt/today",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get today's Product Hunt",
+      "rapidapi": {
+        "host": "product-hunt2.p.rapidapi.com",
+        "path": "/today",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "sec/company/{ticker}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get SEC company filings",
+      "rapidapi": {
+        "host": "sec-filings.p.rapidapi.com",
+        "path": "/company/{ticker}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "sec/filings/{type}",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get SEC filings by type",
+      "rapidapi": {
+        "host": "sec-filings.p.rapidapi.com",
+        "path": "/filings/{type}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "wallet/{address}/transactions",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get wallet transactions",
+      "rapidapi": {
+        "host": "ethereum-wallet-history.p.rapidapi.com",
+        "path": "/wallet/{address}/transactions",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "wallet/{address}/tokens",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get wallet token holdings",
+      "rapidapi": {
+        "host": "ethereum-wallet-history.p.rapidapi.com",
+        "path": "/wallet/{address}/tokens",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "wallet/{address}/nfts",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get wallet NFT holdings",
+      "rapidapi": {
+        "host": "ethereum-wallet-history.p.rapidapi.com",
+        "path": "/wallet/{address}/nfts",
+        "method": "GET"
+      }
     }
   ]
 }
