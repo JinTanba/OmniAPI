@@ -1,10 +1,10 @@
 import { Router } from "express";
 import type { Request, Response } from "express";
-import type { RoutesConfig } from "@x402/express";
 import type { AppConfig } from "./config";
 import { proxyToRapidAPI } from "./proxy";
+import { usageLogger } from "./logger";
 
-export function buildPaymentRoutes(config: AppConfig): RoutesConfig {
+export function buildPaymentRoutes(config: AppConfig): Record<string, any> {
   const routes: Record<string, any> = {};
 
   for (const service of config.services) {
@@ -20,7 +20,7 @@ export function buildPaymentRoutes(config: AppConfig): RoutesConfig {
     };
   }
 
-  return routes as RoutesConfig;
+  return routes;
 }
 
 export function buildProxyRouter(config: AppConfig, apiKey: string): Router {
@@ -30,6 +30,8 @@ export function buildProxyRouter(config: AppConfig, apiKey: string): Router {
     const method = service.method.toLowerCase() as "get" | "post";
 
     router[method](`/${service.path}`, async (req: Request, res: Response) => {
+      const startTime = Date.now();
+      
       try {
         const queryParams: Record<string, string> = {};
         if (req.query) {
@@ -46,11 +48,34 @@ export function buildProxyRouter(config: AppConfig, apiKey: string): Router {
           body: req.body,
         });
 
+        // Log the API usage
+        usageLogger.log({
+          method: service.method,
+          path: `/${service.path}`,
+          rapidapiHost: service.rapidapi.host,
+          rapidapiPath: service.rapidapi.path,
+          price: service.price,
+          status: result.status,
+          durationMs: Date.now() - startTime,
+          userAgent: req.headers['user-agent'],
+        });
+
         res.status(result.status).json(result.data);
       } catch (error) {
-        const message =
-          error instanceof Error ? error.message : "Unknown error";
-        res.status(502).json({ error: "Proxy error", message });
+        // Log failed request (internal only)
+        usageLogger.log({
+          method: service.method,
+          path: `/${service.path}`,
+          rapidapiHost: service.rapidapi.host,
+          rapidapiPath: service.rapidapi.path,
+          price: service.price,
+          status: 502,
+          durationMs: Date.now() - startTime,
+          userAgent: req.headers['user-agent'],
+        });
+
+        // Generic error response (hide upstream details)
+        res.status(502).json({ error: "Service temporarily unavailable" });
       }
     });
   }
