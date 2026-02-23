@@ -1,6 +1,6 @@
 {
   "payTo": "0xEe9ed0BaC212872B611e43ab078435a978eC84E7",
-  "network": "eip155:84532",
+  "network": "eip155:8453",
   "services": [
     {
       "path": "user",
