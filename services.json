@@ -78,6 +78,3713 @@
         "path": "/api/instagram/profile",
         "method": "POST"
       }
+    },
+    {
+      "path": "data/social/twitter/followers",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Twitter followers",
+      "rapidapi": {
+        "host": "twitter-api45.p.rapidapi.com",
+        "path": "/followers.php",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "data/social/twitter/timeline",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Twitter timeline",
+      "rapidapi": {
+        "host": "twitter-api45.p.rapidapi.com",
+        "path": "/timeline.php",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "data/social/twitter/tweets",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Twitter tweets",
+      "rapidapi": {
+        "host": "twitter-api45.p.rapidapi.com",
+        "path": "/tweet.php",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "data/commodity/oil-prices",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Live oil prices",
+      "rapidapi": {
+        "host": "live-oil-prices.p.rapidapi.com",
+        "path": "/web-crawling/api/oil-price-charts",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "search/google",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Google search",
+      "rapidapi": {
+        "host": "google-search74.p.rapidapi.com",
+        "path": "/",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/locations/v2/auto-complete",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Location auto-complete",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/locations/v2/auto-complete",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/properties/v3/list",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "List properties for sale/rent",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/properties/v3/list",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "realty/properties/v3/list-similar-homes",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List similar homes for sale",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/properties/v3/list-similar-homes",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/properties/v3/detail",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get property detail",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/properties/v3/detail",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/properties/v3/get-photos",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get property photos",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/properties/v3/get-photos",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/properties/v3/get-commute-time",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get commute time",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/properties/v3/get-commute-time",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/properties/v3/get-surroundings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get property surroundings",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/properties/v3/get-surroundings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/agents/v2/search-location",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search agents by location",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/agents/v2/search-location",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/agents/v2/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List agents",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/agents/v2/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/agents/v2/get-profile",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get agent profile",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/agents/v2/get-profile",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/agents/v2/get-reviews",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get agent reviews",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/agents/v2/get-reviews",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/agents/v2/get-recommendations",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get agent recommendations",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/agents/v2/get-recommendations",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/agents/v2/get-listings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get agent listings",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/agents/v2/get-listings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/mortgage/v2/check-rates",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Check mortgage rates",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/mortgage/v2/check-rates",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/mortgage/v2/calculate",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Calculate mortgage",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/mortgage/v2/calculate",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/finance/rates",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get finance rates",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/finance/rates",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/schools/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List schools",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/schools/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/schools/detail",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get school detail",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/schools/detail",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "realty/schools/get-school-district",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get school district",
+      "rapidapi": {
+        "host": "realty-in-us.p.rapidapi.com",
+        "path": "/schools/get-school-district",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/v2/auto-complete",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Seeking Alpha auto-complete",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/v2/auto-complete",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/feeds/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Seeking Alpha feeds list",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/feeds/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/market/get-realtime-quotes",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get realtime quotes",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/market/get-realtime-quotes",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/market/get-dividend-investing",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get dividend investing",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/market/get-dividend-investing",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/market/get-day-watch",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get day watch",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/market/get-day-watch",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/market/get-equity",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get equity",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/market/get-equity",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/market/get-market-open",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market open status",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/market/get-market-open",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/market/get-earnings-calendar",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get earnings calendar",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/market/get-earnings-calendar",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-meta-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol meta data",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-meta-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-profile",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol profile",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-profile",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol data",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol summary",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-summary",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-financials",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol financials",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-financials",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-fundamentals",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol fundamentals",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-fundamentals",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-peers",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol peers",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-peers",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-historical-prices",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get historical prices",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-historical-prices",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-dividend-history",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get dividend history",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-dividend-history",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-splits",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol splits",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-splits",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/v2/get-momentum",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get momentum data",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/v2/get-momentum",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-valuation",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol valuation",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-valuation",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-metrics",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol metrics",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-metrics",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-option-expirations",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get option expirations",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-option-expirations",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/v2/get-options",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get options data",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/v2/get-options",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-metric-grades",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get metric grades",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-metric-grades",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-sector-metrics",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get sector metrics",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-sector-metrics",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-sec-filings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get SEC filings",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-sec-filings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-chart",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get symbol chart data",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-chart",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/v2/get-chart",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get chart data v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/v2/get-chart",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-estimates",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get estimates",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-estimates",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-holdings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get holdings",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-holdings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-estimated-earning-announces",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get estimated earning announces",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-estimated-earning-announces",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-earnings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get earnings data",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-earnings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-analyst-price-target",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get analyst price target",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-analyst-price-target",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-analyst-recommendations",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get analyst recommendations",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-analyst-recommendations",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/symbols/get-ownership",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ownership data",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/symbols/get-ownership",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/analysis/v2/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List analysis articles v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/analysis/v2/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/analysis/v2/get-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get analysis details v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/analysis/v2/get-details",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/articles/v2/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List articles v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/articles/v2/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/articles/v2/list-trending",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List trending articles v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/articles/v2/list-trending",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/articles/list-wall-street-breakfast",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Wall Street Breakfast articles",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/articles/list-wall-street-breakfast",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/articles/get-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get article details",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/articles/get-details",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/news/v2/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List news v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/news/v2/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/news/v2/list-by-symbol",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List news by symbol v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/news/v2/list-by-symbol",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/news/v2/list-trending",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List trending news v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/news/v2/list-trending",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/news/get-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get news details",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/news/get-details",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/press-releases/v2/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List press releases v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/press-releases/v2/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/press-releases/get-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get press release details",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/press-releases/get-details",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/transcripts/v2/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List transcripts v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/transcripts/v2/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/transcripts/v2/get-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get transcript details v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/transcripts/v2/get-details",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/comments/v2/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List comments v2",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/comments/v2/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/comments/get-contents",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get comment contents",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/comments/get-contents",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/comments/get-sub-comments",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get sub comments",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/comments/get-sub-comments",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/screeners/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List screeners",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/screeners/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/screener-filters/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List screener filters",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/screener-filters/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/screeners/detail",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get screener detail",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/screeners/detail",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/screeners/get-results",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Get screener results",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/screeners/get-results",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/accounts/get-info",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get account info",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/accounts/get-info",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/seeking-alpha/accounts/logout",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Account logout",
+      "rapidapi": {
+        "host": "seeking-alpha.p.rapidapi.com",
+        "path": "/accounts/logout",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/search/search-user",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search TikTok users",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/search/search-user",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/search/search-sound",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search TikTok sounds",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/search/search-sound",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/search/search-autocomplete",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search autocomplete",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/search/search-autocomplete",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/search/search-hashtag",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search TikTok hashtags",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/search/search-hashtag",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/search/search-place",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search TikTok places",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/search/search-place",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/search/search-live",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search TikTok live streams",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/search/search-live",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/search/search-video",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search TikTok videos",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/search/search-video",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/user/user-follower",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get user followers",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/user/user-follower",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/user/user-following",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get user following",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/user/user-following",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/user/user-post",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get user posts",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/user/user-post",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/user/user-detail",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get user details",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/user/user-detail",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/user/user-top",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get top user info",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/user/user-top",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/video/video-location",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get video location",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/video/video-location",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/video/video-detail",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get video details",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/video/video-detail",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/location/location-review",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get location reviews",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/location/location-review",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/location/location-detail",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get location details",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/location/location-detail",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/comment/comment-reply",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get comment replies",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/comment/comment-reply",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/comment/comment-comments",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get comments",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/comment/comment-comments",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/shop/search-product",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search TikTok shop products",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/shop/search-product",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/detail-product",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get product details",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/detail-product",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/shop/search-shop",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search TikTok shops",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/shop/search-shop",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/shop/search-product-autocomplete",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Product search autocomplete",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/shop/search-product-autocomplete",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/us/seller-product-list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get US seller product list",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/us/seller-product-list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/us/detail-product-us",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get US product details",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/us/detail-product-us",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "social/tiktok/us/search-product-us",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search US products",
+      "rapidapi": {
+        "host": "tiktok-data-api2.p.rapidapi.com",
+        "path": "/us/search-product-us",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/market/tickers",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market tickers",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/market/tickers",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search stocks",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/market/quotes",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get real-time quotes",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/market/quotes",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/market/quotes/snapshots",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get quote snapshots",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/market/quotes",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v2/stock/history",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock history v2",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v2/stock/history",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/history",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock history v1",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/history",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/market/screener",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Market screener",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/market/screener",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/modules",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock modules",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/modules",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/insider-trades",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get insider trades",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/insider-trades",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v2/market/news",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market news v2",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v2/market/news",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/market/news",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market news v1",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/market/news",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/options",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get options data",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/options",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/unusual-options-activity",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get unusual options activity",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/unusual-options-activity",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/most-active",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get most active stocks",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/most-active",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/profile",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock profile",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/profile",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/statistics",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock statistics",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/statistics",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/financial-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock financial data",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/financial-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/sec-filings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get SEC filings",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/sec-filings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/earnings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock earnings",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/earnings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/calendar-events",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock calendar events",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/calendar-events",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/insider-holders",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get insider holders",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/insider-holders",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v2/stock/balance-sheet",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get balance sheet v2",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v2/stock/balance-sheet",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/balance-sheet",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get balance sheet v1",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/balance-sheet",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/institution-ownership",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get institution ownership",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/institution-ownership",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/insider-transactions",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get insider transactions",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/insider-transactions",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/index-trend",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get index trend",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/index-trend",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/income-statement",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get income statement",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/income-statement",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/cashflow-statement",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get cashflow statement",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/cashflow-statement",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/recommendation-trend",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get recommendation trend",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/recommendation-trend",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/net-share-purchase-activity",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get net share purchase activity",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/net-share-purchase-activity",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/stock/upgrade-downgrade-history",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get upgrade downgrade history",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/stock/upgrade-downgrade-history",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/calendar/earnings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get earnings calendar",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/calendar/earnings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/calendar/dividends",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get dividends calendar",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/calendar/dividends",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/calendar/economic_events",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get economic events calendar",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/calendar/economic_events",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/calendar/public_offerings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get public offerings calendar",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/calendar/public_offerings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/calendar/ipo",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get IPO calendar",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/calendar/ipo",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/calendar/stock-splits",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock splits calendar",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/calendar/stock-splits",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/indicators/sma",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get SMA indicator",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/indicators/sma",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/indicators/rsi",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get RSI indicator",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/indicators/rsi",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/indicators/macd",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get MACD indicator",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/indicators/macd",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo-finance/v1/indicators/adx",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ADX indicator",
+      "rapidapi": {
+        "host": "yahoo-finance15.p.rapidapi.com",
+        "path": "/v1/indicators/adx",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/v3/auto-complete",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Market auto-complete",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/v3/auto-complete",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/v3/get-movers",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market movers",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/v3/get-movers",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/v3/get-realtime-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get realtime market data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/v3/get-realtime-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-realtime-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock realtime data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-realtime-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-mini-chart-realtime-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get mini chart realtime data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-mini-chart-realtime-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-security-info",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get security info",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-security-info",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-price-fair-value",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get price fair value",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-price-fair-value",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-analysis-report",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get analysis report",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-analysis-report",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-trailing-total-returns",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get trailing total returns",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-trailing-total-returns",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-analysis-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get analysis data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-analysis-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-financials",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get financials",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-financials",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-financial-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get financial details",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-financial-details",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-splits",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock splits",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-splits",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-executive",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get executive info",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-executive",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-competitors",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get competitors",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-competitors",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-mini-chart-quote",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get mini chart quote",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-mini-chart-quote",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v3/get-profile",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock profile",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v3/get-profile",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-ownership",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ownership",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-ownership",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-dividends",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get dividends",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-dividends",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-short-interest",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get short interest",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-short-interest",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-operating-performance",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get operating performance",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-operating-performance",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-instruments",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get instruments",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-instruments",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-trading-information",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get trading information",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-trading-information",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-news",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock news",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-news",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-risk-rating-assessment",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get risk rating assessment",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-risk-rating-assessment",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-risk-rating-breakdown",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get risk rating breakdown",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-risk-rating-breakdown",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-valuation",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get valuation",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-valuation",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/get-key-stats",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get key stats",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/get-key-stats",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/key-stats/get-overview",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get key stats overview",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/key-stats/get-overview",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/key-stats/get-growth-table",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get growth table",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/key-stats/get-growth-table",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/key-stats/get-financial-health",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get financial health",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/key-stats/get-financial-health",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/key-stats/get-operating-efficiency",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get operating efficiency",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/key-stats/get-operating-efficiency",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/stock/v2/key-stats/get-cash-flow",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get cash flow",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/stock/v2/key-stats/get-cash-flow",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/articles/v2/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List articles",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/articles/v2/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/articles/v2/get-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get article details",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/articles/v2/get-details",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/news/v2/list",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List news",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/news/v2/list",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/news/v2/get-details",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get news details",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/news/v2/get-details",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/get-quote",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF quote",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/get-quote",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/get-quote",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund quote",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/get-quote",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/get-realtime-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF realtime data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/get-realtime-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/get-realtime-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund realtime data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/get-realtime-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/get-mini-chart-realtime-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF mini chart realtime data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/get-mini-chart-realtime-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/get-mini-chart-realtime-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund mini chart realtime data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/get-mini-chart-realtime-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/get-disclosure-flag",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF disclosure flag",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/get-disclosure-flag",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/get-disclosure-flag",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund disclosure flag",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/get-disclosure-flag",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/get-strategy",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF strategy",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/get-strategy",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/get-strategy",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund strategy",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/get-strategy",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/get-morningstar-analysis",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF Morningstar analysis",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/get-morningstar-analysis",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/get-morningstar-analysis",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund Morningstar analysis",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/get-morningstar-analysis",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/analysis/get-comparables",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF comparables",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/analysis/get-comparables",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/analysis/get-comparables",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund comparables",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/analysis/get-comparables",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/analysis/get-archived",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF archived analysis",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/analysis/get-archived",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/analysis/get-archived",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund archived analysis",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/analysis/get-archived",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-asset-allocation",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF asset allocation",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-asset-allocation",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-asset-allocation",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund asset allocation",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-asset-allocation",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-current-fixed-income-style",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF current fixed income style",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-current-fixed-income-style",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-current-fixed-income-style",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund current fixed income style",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-current-fixed-income-style",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-historical-fixed-income-style",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF historical fixed income style",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-historical-fixed-income-style",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-historical-fixed-income-style",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund historical fixed income style",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-historical-fixed-income-style",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-exposure",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF exposure",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-exposure",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-exposure",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund exposure",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-exposure",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-region-exposure",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF region exposure",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-region-exposure",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-region-exposure",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund region exposure",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-region-exposure",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-country-exposure",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF country exposure",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-country-exposure",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-country-exposure",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund country exposure",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-country-exposure",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-credit-quality",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF credit quality",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-credit-quality",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-credit-quality",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund credit quality",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-credit-quality",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-coupon-range",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF coupon range",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-coupon-range",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-coupon-range",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund coupon range",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-coupon-range",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-maturity-schedule",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF maturity schedule",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-maturity-schedule",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-maturity-schedule",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund maturity schedule",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-maturity-schedule",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-fixed-income-exposure-analysis",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF fixed income exposure analysis",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-fixed-income-exposure-analysis",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-fixed-income-exposure-analysis",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund fixed income exposure analysis",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-fixed-income-exposure-analysis",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-holdings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF holdings",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-holdings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-holdings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund holdings",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-holdings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-stock-style",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF stock style",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-stock-style",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-stock-style",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund stock style",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-stock-style",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-stock-style-weight",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF stock style weight",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-stock-style-weight",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-stock-style-weight",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund stock style weight",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-stock-style-weight",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-measures",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF measures",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-measures",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-measures",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund measures",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-measures",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-market-cap",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF market cap",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-market-cap",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-market-cap",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund market cap",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-market-cap",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-factor-profile",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF factor profile",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-factor-profile",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-factor-profile",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund factor profile",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-factor-profile",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/portfolio/get-financial-metrics",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF financial metrics",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/portfolio/get-financial-metrics",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/portfolio/get-financial-metrics",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund financial metrics",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/portfolio/get-financial-metrics",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/people/get-summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF people summary",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/people/get-summary",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/people/get-summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund people summary",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/people/get-summary",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/people/get-proxy-voting-management",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF proxy voting management",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/people/get-proxy-voting-management",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/people/get-proxy-voting-management",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund proxy voting management",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/people/get-proxy-voting-management",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/people/get-proxy-voting-shareholder",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF proxy voting shareholder",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/people/get-proxy-voting-shareholder",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/people/get-proxy-voting-shareholder",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund proxy voting shareholder",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/people/get-proxy-voting-shareholder",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/risk/get-risk-return-analysis",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF risk return analysis",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/risk/get-risk-return-analysis",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/risk/get-risk-return-analysis",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund risk return analysis",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/risk/get-risk-return-analysis",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/risk/get-risk-score",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF risk score",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/risk/get-risk-score",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/risk/get-risk-score",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund risk score",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/risk/get-risk-score",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/risk/get-risk-return-summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF risk return summary",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/risk/get-risk-return-summary",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/risk/get-risk-return-summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund risk return summary",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/risk/get-risk-return-summary",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/risk/get-market-volatility-measures",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF market volatility measures",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/risk/get-market-volatility-measures",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/risk/get-market-volatility-measures",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund market volatility measures",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/risk/get-market-volatility-measures",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/risk/get-risk-volatility-measures",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF risk volatility measures",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/risk/get-risk-volatility-measures",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/risk/get-risk-volatility-measures",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund risk volatility measures",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/risk/get-risk-volatility-measures",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/performance/get-returns",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF returns",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/performance/get-returns",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/performance/get-returns",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund returns",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/performance/get-returns",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/performance/get-trailing-returns",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF trailing returns",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/performance/get-trailing-returns",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/performance/get-trailing-returns",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund trailing returns",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/performance/get-trailing-returns",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/performance/get-annual-distributions",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF annual distributions",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/performance/get-annual-distributions",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/performance/get-annual-distributions",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund annual distributions",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/performance/get-annual-distributions",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/performance/get-latest-distributions",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF latest distributions",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/performance/get-latest-distributions",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/performance/get-latest-distributions",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund latest distributions",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/performance/get-latest-distributions",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/parent/get-summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF parent summary",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/parent/get-summary",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/parent/get-summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund parent summary",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/parent/get-summary",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/parent/get-medalist-rating",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF medalist rating",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/parent/get-medalist-rating",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/parent/get-medalist-rating",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund medalist rating",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/parent/get-medalist-rating",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/parent/get-recent-investment-rating-change",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF recent investment rating change",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/parent/get-recent-investment-rating-change",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/parent/get-recent-investment-rating-change",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund recent investment rating change",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/parent/get-recent-investment-rating-change",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/parent/get-investment-flows",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF investment flows",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/parent/get-investment-flows",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/parent/get-investment-flows",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund investment flows",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/parent/get-investment-flows",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/parent/get-morningstar-rating",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF Morningstar rating",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/parent/get-morningstar-rating",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/parent/get-morningstar-rating",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund Morningstar rating",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/parent/get-morningstar-rating",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/parent/get-lowest-rated-investments",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF lowest rated investments",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/parent/get-lowest-rated-investments",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/parent/get-lowest-rated-investments",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund lowest rated investments",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/parent/get-lowest-rated-investments",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/parent/get-highest-rated-investments",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF highest rated investments",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/parent/get-highest-rated-investments",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/parent/get-highest-rated-investments",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund highest rated investments",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/parent/get-highest-rated-investments",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/parent/get-top-medalist-rated-investments",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF top medalist rated investments",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/parent/get-top-medalist-rated-investments",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/parent/get-top-medalist-rated-investments",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund top medalist rated investments",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/parent/get-top-medalist-rated-investments",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/price/get-cost-illustration",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF cost illustration",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/price/get-cost-illustration",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/price/get-cost-illustration",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund cost illustration",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/price/get-cost-illustration",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/price/get-fee-level",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF fee level",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/price/get-fee-level",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/price/get-fee-level",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund fee level",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/price/get-fee-level",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/price/get-taxes",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF taxes",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/price/get-taxes",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/price/get-taxes",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund taxes",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/price/get-taxes",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/price/get-other-fees",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF other fees",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/price/get-other-fees",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/price/get-other-fees",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund other fees",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/price/get-other-fees",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/sustainability/get-esg-risk",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF ESG risk",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/sustainability/get-esg-risk",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/sustainability/get-esg-risk",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund ESG risk",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/sustainability/get-esg-risk",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/sustainability/get-carbon-metrics",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF carbon metrics",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/sustainability/get-carbon-metrics",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/sustainability/get-carbon-metrics",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund carbon metrics",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/sustainability/get-carbon-metrics",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/etf/sustainability/get-product-involvement",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ETF product involvement",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/etf/sustainability/get-product-involvement",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/fund/sustainability/get-product-involvement",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fund product involvement",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/fund/sustainability/get-product-involvement",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/insiders/v2/get-biography",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get insider biography",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/insiders/v2/get-biography",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "news/crypto/coindesk",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "CoinDesk crypto news",
+      "rapidapi": {
+        "host": "cryptocurrency-news2.p.rapidapi.com",
+        "path": "/v1/coindesk",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "news/crypto/cointelegraph",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Cointelegraph crypto news",
+      "rapidapi": {
+        "host": "cryptocurrency-news2.p.rapidapi.com",
+        "path": "/v1/cointelegraph",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "news/crypto/bitcoinist",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Bitcoinist crypto news",
+      "rapidapi": {
+        "host": "cryptocurrency-news2.p.rapidapi.com",
+        "path": "/v1/bitcoinist",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "news/crypto/decrypt",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Decrypt crypto news",
+      "rapidapi": {
+        "host": "cryptocurrency-news2.p.rapidapi.com",
+        "path": "/v1/decrypt",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "news/crypto/bsc-news",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "BSC News crypto news",
+      "rapidapi": {
+        "host": "cryptocurrency-news2.p.rapidapi.com",
+        "path": "/v1/bsc-news",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "news/crypto/the-guardian",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "The Guardian crypto news",
+      "rapidapi": {
+        "host": "cryptocurrency-news2.p.rapidapi.com",
+        "path": "/v1/the-guardian",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "news/crypto/cryptodaily",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "CryptoDaily news",
+      "rapidapi": {
+        "host": "cryptocurrency-news2.p.rapidapi.com",
+        "path": "/v1/cryptodaily",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search securities",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/timeseries/ohlcv",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Time Series OHLCV",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/timeseries/ohlcv",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/timeseries/historical",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Historical Time Series OHLCV",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/timeseries/historical",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/basic-info",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get basic info",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/basic-info",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/session",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get session info",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/session",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/quotes",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get quotes L1",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/quotes",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/fundamentals/timeseries",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Fundamental time series",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/fundamentals/timeseries",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/fundamentals",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fundamentals",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/fundamentals",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/fundamentals/metadata",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get fundamentals metadata",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/fundamentals/metadata",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/options/chain/expiration",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Option chain expiration",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/options/chain/expiration",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/options/chain/strike",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Option chain strike",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/options/chain/strike",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/options/available",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Option available list",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/options/available",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/documents",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "List documents",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/documents",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/documents/get",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get document",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/documents/get",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/news/feed",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "News feed",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/news/feed",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/calendar/ipos",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "IPO calendar",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/calendar/ipos",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/calendar/dividends",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Dividends calendar",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/calendar/dividends",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/calendar/earnings",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Earning calendar",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/calendar/earnings",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/calendar/economic-events",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Economic events calendar",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/calendar/economic-events",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/screener/bond",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Bond screener",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/screener/bond",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/screener/crypto",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Crypto screener",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/screener/crypto",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/screener/etf",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "ETF screener",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/screener/etf",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/screener/stock",
+      "method": "POST",
+      "price": "$0.001",
+      "description": "Stock screener",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/screener/stock",
+        "method": "POST"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/screener/parameters/crypto",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Parameters for crypto",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/screener/parameters/crypto",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/screener/parameters/etf",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Parameters for ETFs",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/screener/parameters/etf",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/screener/parameters/stock",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Parameters for stock",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/screener/parameters/stock",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/screener/parameters/bond",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Parameters for bonds",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/screener/parameters/bond",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/insightsentry/v3/websocket/key",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get websocket API key",
+      "rapidapi": {
+        "host": "insightsentry.p.rapidapi.com",
+        "path": "/v3/websocket/key",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/search",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Search stocks",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/search",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/price",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock price",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/price",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/esg-peer-score",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get ESG peer score",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/esg-peer-score",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/market-movers",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market movers",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/market-movers",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/technical-insights",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get technical insights",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/technical-insights",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/options",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get options data",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/options",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/historic",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get historic data",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/historic",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/news",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock news",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/news",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/top-trending",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get top trending stocks",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/top-trending",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/multi-quote",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get multi quote",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/multi-quote",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/key-statistics",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get key statistics",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/key-statistics/{ticker}",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/yahoo127/balance-sheet",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get balance sheet",
+      "rapidapi": {
+        "host": "yahoo-finance127.p.rapidapi.com",
+        "path": "/balance-sheet",
+        "method": "GET"
+      }
     }
   ]
 }
