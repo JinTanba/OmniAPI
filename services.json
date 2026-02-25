@@ -1323,6 +1323,17 @@
       }
     },
     {
+      "path": "finance/yahoo-finance/v3/stock/get-chart",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get stock chart data with historical prices",
+      "rapidapi": {
+        "host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
+        "path": "/stock/v3/get-chart",
+        "method": "GET"
+      }
+    },
+    {
       "path": "finance/yahoo-finance/v1/market/screener",
       "method": "GET",
       "price": "$0.001",
@@ -1708,24 +1719,13 @@
       }
     },
     {
-      "path": "finance/morning-star/market/v3/auto-complete",
+      "path": "finance/morning-star/stock/v2/get-ownership",
       "method": "GET",
       "price": "$0.001",
-      "description": "Market auto-complete",
+      "description": "Get ownership data",
       "rapidapi": {
         "host": "morning-star.p.rapidapi.com",
-        "path": "/market/v3/auto-complete",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/market/v3/get-movers",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get market movers",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/market/v3/get-movers",
+        "path": "/stock/v2/get-ownership",
         "method": "GET"
       }
     },
@@ -1737,6 +1737,149 @@
       "rapidapi": {
         "host": "morning-star.p.rapidapi.com",
         "path": "/market/v3/get-realtime-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/get-global-indices",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get global indices",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/get-global-indices",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/v2/get-movers",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market movers",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/v2/get-movers",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/v2/get-returns",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market returns",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/v2/get-returns",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/v2/auto-complete",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Market auto-complete",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/v2/auto-complete",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/get-commentaries",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market commentaries",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/get-commentaries",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/get-articles",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market articles",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/get-articles",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/get-videos",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market videos",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/get-videos",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/auto-complete",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Market auto-complete",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/auto-complete",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/get-summary",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market summary",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/get-summary",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/v2/get-time-series",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get time series data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/v2/get-time-series",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/v2/get-realtime-data",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get realtime market data",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/v2/get-realtime-data",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/get-movers",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market movers",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/get-movers",
+        "method": "GET"
+      }
+    },
+    {
+      "path": "finance/morning-star/market/v2/get-quotes",
+      "method": "GET",
+      "price": "$0.001",
+      "description": "Get market quotes",
+      "rapidapi": {
+        "host": "morning-star.p.rapidapi.com",
+        "path": "/market/v2/get-quotes",
         "method": "GET"
       }
     },
@@ -1759,17 +1902,6 @@
       "rapidapi": {
         "host": "morning-star.p.rapidapi.com",
         "path": "/stock/v2/get-mini-chart-realtime-data",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/stock/v2/get-security-info",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get security info",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/stock/v2/get-security-info",
         "method": "GET"
       }
     },
@@ -1895,17 +2027,6 @@
       }
     },
     {
-      "path": "finance/morning-star/stock/v2/get-ownership",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ownership",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/stock/v2/get-ownership",
-        "method": "GET"
-      }
-    },
-    {
       "path": "finance/morning-star/stock/v2/get-dividends",
       "method": "GET",
       "price": "$0.001",
@@ -1924,17 +2045,6 @@
       "rapidapi": {
         "host": "morning-star.p.rapidapi.com",
         "path": "/stock/v2/get-short-interest",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/stock/v2/get-operating-performance",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get operating performance",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/stock/v2/get-operating-performance",
         "method": "GET"
       }
     },
@@ -2071,1190 +2181,46 @@
       }
     },
     {
-      "path": "finance/morning-star/articles/v2/list",
+      "path": "finance/morning-star/stock/v2/get-profile",
       "method": "GET",
       "price": "$0.001",
-      "description": "List articles",
+      "description": "Get stock profile",
       "rapidapi": {
         "host": "morning-star.p.rapidapi.com",
-        "path": "/articles/v2/list",
+        "path": "/stock/v2/get-profile",
         "method": "GET"
       }
     },
     {
-      "path": "finance/morning-star/articles/v2/get-details",
+      "path": "finance/morning-star/stock/get-detail",
       "method": "GET",
       "price": "$0.001",
-      "description": "Get article details",
+      "description": "Get stock detail",
       "rapidapi": {
         "host": "morning-star.p.rapidapi.com",
-        "path": "/articles/v2/get-details",
+        "path": "/stock/get-detail",
         "method": "GET"
       }
     },
     {
-      "path": "finance/morning-star/news/v2/list",
+      "path": "finance/morning-star/stock/get-histories",
       "method": "GET",
       "price": "$0.001",
-      "description": "List news",
+      "description": "Get stock histories",
       "rapidapi": {
         "host": "morning-star.p.rapidapi.com",
-        "path": "/news/v2/list",
+        "path": "/stock/get-histories",
         "method": "GET"
       }
     },
     {
-      "path": "finance/morning-star/news/v2/get-details",
+      "path": "finance/morning-star/stock/get-quote",
       "method": "GET",
       "price": "$0.001",
-      "description": "Get news details",
+      "description": "Get stock quote",
       "rapidapi": {
         "host": "morning-star.p.rapidapi.com",
-        "path": "/news/v2/get-details",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/get-quote",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF quote",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/get-quote",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/get-quote",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund quote",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/get-quote",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/get-realtime-data",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF realtime data",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/get-realtime-data",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/get-realtime-data",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund realtime data",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/get-realtime-data",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/get-mini-chart-realtime-data",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF mini chart realtime data",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/get-mini-chart-realtime-data",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/get-mini-chart-realtime-data",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund mini chart realtime data",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/get-mini-chart-realtime-data",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/get-disclosure-flag",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF disclosure flag",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/get-disclosure-flag",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/get-disclosure-flag",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund disclosure flag",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/get-disclosure-flag",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/get-strategy",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF strategy",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/get-strategy",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/get-strategy",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund strategy",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/get-strategy",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/get-morningstar-analysis",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF Morningstar analysis",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/get-morningstar-analysis",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/get-morningstar-analysis",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund Morningstar analysis",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/get-morningstar-analysis",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/analysis/get-comparables",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF comparables",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/analysis/get-comparables",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/analysis/get-comparables",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund comparables",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/analysis/get-comparables",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/analysis/get-archived",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF archived analysis",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/analysis/get-archived",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/analysis/get-archived",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund archived analysis",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/analysis/get-archived",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-asset-allocation",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF asset allocation",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-asset-allocation",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-asset-allocation",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund asset allocation",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-asset-allocation",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-current-fixed-income-style",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF current fixed income style",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-current-fixed-income-style",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-current-fixed-income-style",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund current fixed income style",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-current-fixed-income-style",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-historical-fixed-income-style",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF historical fixed income style",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-historical-fixed-income-style",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-historical-fixed-income-style",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund historical fixed income style",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-historical-fixed-income-style",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-exposure",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF exposure",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-exposure",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-exposure",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund exposure",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-exposure",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-region-exposure",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF region exposure",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-region-exposure",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-region-exposure",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund region exposure",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-region-exposure",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-country-exposure",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF country exposure",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-country-exposure",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-country-exposure",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund country exposure",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-country-exposure",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-credit-quality",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF credit quality",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-credit-quality",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-credit-quality",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund credit quality",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-credit-quality",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-coupon-range",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF coupon range",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-coupon-range",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-coupon-range",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund coupon range",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-coupon-range",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-maturity-schedule",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF maturity schedule",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-maturity-schedule",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-maturity-schedule",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund maturity schedule",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-maturity-schedule",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-fixed-income-exposure-analysis",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF fixed income exposure analysis",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-fixed-income-exposure-analysis",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-fixed-income-exposure-analysis",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund fixed income exposure analysis",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-fixed-income-exposure-analysis",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-holdings",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF holdings",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-holdings",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-holdings",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund holdings",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-holdings",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-stock-style",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF stock style",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-stock-style",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-stock-style",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund stock style",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-stock-style",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-stock-style-weight",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF stock style weight",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-stock-style-weight",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-stock-style-weight",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund stock style weight",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-stock-style-weight",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-measures",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF measures",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-measures",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-measures",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund measures",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-measures",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-market-cap",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF market cap",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-market-cap",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-market-cap",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund market cap",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-market-cap",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-factor-profile",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF factor profile",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-factor-profile",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-factor-profile",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund factor profile",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-factor-profile",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/portfolio/get-financial-metrics",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF financial metrics",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/portfolio/get-financial-metrics",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/portfolio/get-financial-metrics",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund financial metrics",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/portfolio/get-financial-metrics",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/people/get-summary",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF people summary",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/people/get-summary",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/people/get-summary",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund people summary",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/people/get-summary",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/people/get-proxy-voting-management",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF proxy voting management",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/people/get-proxy-voting-management",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/people/get-proxy-voting-management",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund proxy voting management",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/people/get-proxy-voting-management",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/people/get-proxy-voting-shareholder",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF proxy voting shareholder",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/people/get-proxy-voting-shareholder",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/people/get-proxy-voting-shareholder",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund proxy voting shareholder",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/people/get-proxy-voting-shareholder",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/risk/get-risk-return-analysis",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF risk return analysis",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/risk/get-risk-return-analysis",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/risk/get-risk-return-analysis",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund risk return analysis",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/risk/get-risk-return-analysis",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/risk/get-risk-score",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF risk score",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/risk/get-risk-score",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/risk/get-risk-score",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund risk score",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/risk/get-risk-score",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/risk/get-risk-return-summary",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF risk return summary",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/risk/get-risk-return-summary",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/risk/get-risk-return-summary",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund risk return summary",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/risk/get-risk-return-summary",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/risk/get-market-volatility-measures",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF market volatility measures",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/risk/get-market-volatility-measures",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/risk/get-market-volatility-measures",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund market volatility measures",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/risk/get-market-volatility-measures",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/risk/get-risk-volatility-measures",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF risk volatility measures",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/risk/get-risk-volatility-measures",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/risk/get-risk-volatility-measures",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund risk volatility measures",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/risk/get-risk-volatility-measures",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/performance/get-returns",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF returns",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/performance/get-returns",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/performance/get-returns",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund returns",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/performance/get-returns",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/performance/get-trailing-returns",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF trailing returns",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/performance/get-trailing-returns",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/performance/get-trailing-returns",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund trailing returns",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/performance/get-trailing-returns",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/performance/get-annual-distributions",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF annual distributions",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/performance/get-annual-distributions",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/performance/get-annual-distributions",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund annual distributions",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/performance/get-annual-distributions",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/performance/get-latest-distributions",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF latest distributions",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/performance/get-latest-distributions",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/performance/get-latest-distributions",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund latest distributions",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/performance/get-latest-distributions",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/parent/get-summary",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF parent summary",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/parent/get-summary",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/parent/get-summary",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund parent summary",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/parent/get-summary",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/parent/get-medalist-rating",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF medalist rating",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/parent/get-medalist-rating",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/parent/get-medalist-rating",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund medalist rating",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/parent/get-medalist-rating",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/parent/get-recent-investment-rating-change",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF recent investment rating change",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/parent/get-recent-investment-rating-change",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/parent/get-recent-investment-rating-change",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund recent investment rating change",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/parent/get-recent-investment-rating-change",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/parent/get-investment-flows",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF investment flows",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/parent/get-investment-flows",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/parent/get-investment-flows",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund investment flows",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/parent/get-investment-flows",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/parent/get-morningstar-rating",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF Morningstar rating",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/parent/get-morningstar-rating",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/parent/get-morningstar-rating",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund Morningstar rating",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/parent/get-morningstar-rating",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/parent/get-lowest-rated-investments",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF lowest rated investments",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/parent/get-lowest-rated-investments",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/parent/get-lowest-rated-investments",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund lowest rated investments",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/parent/get-lowest-rated-investments",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/parent/get-highest-rated-investments",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF highest rated investments",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/parent/get-highest-rated-investments",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/parent/get-highest-rated-investments",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund highest rated investments",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/parent/get-highest-rated-investments",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/parent/get-top-medalist-rated-investments",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF top medalist rated investments",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/parent/get-top-medalist-rated-investments",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/parent/get-top-medalist-rated-investments",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund top medalist rated investments",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/parent/get-top-medalist-rated-investments",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/price/get-cost-illustration",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF cost illustration",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/price/get-cost-illustration",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/price/get-cost-illustration",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund cost illustration",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/price/get-cost-illustration",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/price/get-fee-level",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF fee level",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/price/get-fee-level",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/price/get-fee-level",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund fee level",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/price/get-fee-level",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/price/get-taxes",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF taxes",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/price/get-taxes",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/price/get-taxes",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund taxes",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/price/get-taxes",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/price/get-other-fees",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF other fees",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/price/get-other-fees",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/price/get-other-fees",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund other fees",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/price/get-other-fees",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/sustainability/get-esg-risk",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF ESG risk",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/sustainability/get-esg-risk",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/sustainability/get-esg-risk",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund ESG risk",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/sustainability/get-esg-risk",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/sustainability/get-carbon-metrics",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF carbon metrics",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/sustainability/get-carbon-metrics",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/sustainability/get-carbon-metrics",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund carbon metrics",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/sustainability/get-carbon-metrics",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/etf/sustainability/get-product-involvement",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get ETF product involvement",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/etf/sustainability/get-product-involvement",
-        "method": "GET"
-      }
-    },
-    {
-      "path": "finance/morning-star/fund/sustainability/get-product-involvement",
-      "method": "GET",
-      "price": "$0.001",
-      "description": "Get fund product involvement",
-      "rapidapi": {
-        "host": "morning-star.p.rapidapi.com",
-        "path": "/fund/sustainability/get-product-involvement",
+        "path": "/stock/get-quote",
         "method": "GET"
       }
     },
